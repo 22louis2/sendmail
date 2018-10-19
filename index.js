@@ -35,6 +35,7 @@ const sendMailToContacts = (user, message, subject) => {
 
 app.get('/', (req, res) => {
 	sendMailToContacts('anyaetim@gmail.com', 'how are you doing', 'Test')
+	return res.send('sent mail')
 })
 app.listen(3000, () => {
 	console.log('app is running')
